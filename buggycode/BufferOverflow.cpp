@@ -34,13 +34,13 @@ void demoBufferOverflowData() {
 	printf("login as: ");
 	fflush(stdout);
 	//gets(userName); // use scanf("%s", userName); if gets fails with identifier not found
-	scanf("%s", userName);
+  fgets(userName, USER_INPUT_MAX_LENGTH, stdin);
 
 	// Get password
 	printf("%s@vulnerable.machine.com: ", userName);
 	fflush(stdout);
 	//gets(passwd);  
-	scanf("%s", passwd); // use scanf("%s", passwd); if gets fails with identifier not found
+  fgets(passwd, USER_INPUT_MAX_LENGTH, stdin);
 
 	// Check user rights (set to NORMAL_USER and not changed in code)
 	if (userRights == NORMAL_USER) {
