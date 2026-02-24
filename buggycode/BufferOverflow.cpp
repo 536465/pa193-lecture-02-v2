@@ -3,9 +3,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "stdlib.h"
-#include "memory.h"
-#include <iostream>
-#include <iomanip>
+#include <stdio.h>
 using namespace std;
 // Note: GCC and MSVC uses different memory alignment
 // Try "12345678DevilEvecosia" as a password for gcc build
